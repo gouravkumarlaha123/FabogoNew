@@ -9,6 +9,6 @@ public interface ProgConst {
 	
 	String INPUT_PATH="./data/input.xlsx";
 	
-	String IMG_PATH="./ScreenShot/";
+	String IMG_PATH="./screenShot/";
 }
 
