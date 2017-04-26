@@ -17,5 +17,20 @@ public class Excel {
 			e.printStackTrace();
 		}
 		return v;		
-	}                     
+	}    
+	
+	public static int rowCount(String path,String sheet){
+		int rc=0;
+		try {
+			FileInputStream fis=new FileInputStream(path);
+			Workbook wb=WorkbookFactory.create(fis);
+			rc=wb.getSheet(sheet).getLastRowNum();
+			
+		} catch (Exception e) {
+			
+		}
+		return rc;
+		
+		
+	}
 }
